@@ -46,6 +46,9 @@ const Wrapper = styled.div`
   margin-bottom: 15px;
   padding: 15px 30px;
   cursor: pointer;
+  :hover {
+    opacity: 0.5;
+  }
 `;
 
 const Task = styled.div`

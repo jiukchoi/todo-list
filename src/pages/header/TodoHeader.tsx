@@ -1,7 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import styled from 'styled-components';
+import { LS_KEY } from '../../utils/constants/localStorageKey';
 import { STATUS } from '../../utils/constants/todo';
 import { TodoContext } from '../../utils/contexts/todo';
+import { setItem } from '../../utils/localStorageService';
 import { ITodo } from '../../utils/types/todo';
 
 const TodoHeader: React.FC = () => {
@@ -33,6 +35,10 @@ const TodoHeader: React.FC = () => {
     }
     return true;
   };
+
+  useEffect(() => {
+    setItem(LS_KEY, todos);
+  }, [todos]);
 
   return (
     <form onSubmit={onSubmit}>
