@@ -38,4 +38,5 @@ const UpperWrapper = styled.div`
 const Wrapper = styled.div`
   width: 1300px;
   margin-top: 50px;
+  padding-bottom: 50px;
 `;

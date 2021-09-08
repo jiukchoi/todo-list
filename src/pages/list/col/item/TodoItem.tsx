@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { TodoContext } from '../../../../utils/contexts/todo';
 import { ITodo } from '../../../../utils/types/todo';
+import deleteIcon from '../../../../assets/delete.png';
 
 interface ITodoItem {
   todo: ITodo;
@@ -26,7 +27,7 @@ const TodoItem: React.FC<ITodoItem> = ({ todo }) => {
       <Task>{todo.task}</Task>
       <DeleteIcon
         id={String(todo.id)}
-        src="/img/delete.png"
+        src={deleteIcon}
         onClick={onDeleteClick}
       />
     </Wrapper>

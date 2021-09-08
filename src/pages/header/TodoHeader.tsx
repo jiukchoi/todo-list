@@ -5,6 +5,7 @@ import { STATUS } from '../../utils/constants/todo';
 import { TodoContext } from '../../utils/contexts/todo';
 import { setItem } from '../../utils/localStorageService';
 import { ITodo } from '../../utils/types/todo';
+import addIcon from '../../assets/add.png';
 
 const TodoHeader: React.FC = () => {
   const { todo, setTodo, todos, setTodos } = useContext(TodoContext);
@@ -51,7 +52,7 @@ const TodoHeader: React.FC = () => {
           value={todo?.task}
         />
         <HeaderBtn type="submit">
-          <AddIcon src="/img/add.png" />
+          <AddIcon src={addIcon} alt="delete" />
         </HeaderBtn>
       </Header>
     </form>
