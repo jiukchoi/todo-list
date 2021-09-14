@@ -40,7 +40,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 33px;
+  font-size: 15px;
   background-color: #ffffff;
   border: 1px solid #00000020;
   border-radius: 10px;
@@ -59,6 +59,6 @@ const Task = styled.div`
 `;
 
 const DeleteIcon = styled.img`
-  width: 30px;
+  width: 15px;
   cursor: pointer;
 `;

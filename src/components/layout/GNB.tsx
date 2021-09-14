@@ -23,15 +23,15 @@ const UpperWrapper = styled.div`
   border-bottom: 1px solid #00000010;
 `;
 const Wrapper = styled.div`
-  width: 1440px;
+  width: 1200px;
   display: flex;
   padding: 15px 30px;
   align-items: center;
   justify-content: space-between;
 `;
 const Title = styled.h1`
-  font-size: 50px;
+  font-size: 33px;
 `;
 const DateBar = styled.span`
-  font-size: 30px;
+  font-size: 22px;
 `;

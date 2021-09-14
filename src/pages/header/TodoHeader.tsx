@@ -63,13 +63,14 @@ export default TodoHeader;
 
 const Header = styled.header`
   display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 `;
 
 const HeaderInput = styled.input`
-  width: 100%;
-  font-size: 33px;
-  padding: 20px 30px;
+  width: 60%;
+  font-size: 22px;
+  padding: 10px 20px;
   border-radius: 10px;
   margin-right: 15px;
   border: 1px solid rgba(200, 200, 200);
@@ -80,12 +81,12 @@ const HeaderInput = styled.input`
 `;
 
 const HeaderBtn = styled.button`
-  width: 200px;
+  width: 150px;
   border: none;
   background-color: darkgray;
   border-radius: 10px;
 `;
 
 const AddIcon = styled.img`
-  width: 65px;
+  width: 44px;
 `;

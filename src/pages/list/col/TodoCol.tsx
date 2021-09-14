@@ -66,7 +66,7 @@ const TodoCol: React.FC<ITodoCol> = ({ title, index }) => {
 export default TodoCol;
 
 const Wrapper = styled.div<{ focusedCol: string; id: string }>`
-  width: 400px;
+  width: 300px;
   background-color: #00000010;
   border-radius: 10px;
   display: flex;
@@ -77,7 +77,7 @@ const Wrapper = styled.div<{ focusedCol: string; id: string }>`
 
 const Header = styled.header`
   font-weight: bold;
-  font-size: 35px;
+  font-size: 22px;
   margin-bottom: 20px;
 `;
 
